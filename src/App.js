@@ -13,8 +13,8 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const customerResponse = await axios.get('http://localhost:5000/customers');
-        const transactionResponse = await axios.get('http://localhost:5000/transactions');
+        const customerResponse = await axios.get('https://mahmoudwardany.github.io/transaction-task//customers');
+        const transactionResponse = await axios.get('https://mahmoudwardany.github.io/transaction-task//transactions');
 
         setCustomers(customerResponse.data);
         setTransactions(transactionResponse.data);
